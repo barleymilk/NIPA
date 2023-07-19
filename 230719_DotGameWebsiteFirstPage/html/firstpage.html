@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pixel Game Web Page</title>
+        <style>
+            ul, li {list-style:none; padding:0; margin:0;}
+            a {text-decoration:none; color:inherit;}
+            div{padding:0; margin:0;}
+            .wrap {
+                width: 1080px;
+                margin: 0 auto;
+            }
+            header {
+                width: 100%; height: 135px;
+                background-color: rgb(43, 43, 43);
+                margin: 0; padding: 0;
+                color: white;
+                position: relative;
+            }
+            header h1 {
+                background-color: rgb(102, 98, 158);
+            }
+            .logo {
+                margin-left: 50px;
+            }
+            header ul {
+                position: absolute;
+                top: 80px; right: 60px;
+                font-weight: bold;
+                margin: 0px auto;
+            }
+            header ul li {
+                display: inline-block;
+                margin-left: 80px;
+            }
+            .billboard div {
+                float: left;
+            }
+            .billboard_left img {
+                width: 780px; height: 300px;
+            }
+            .billboard_right img {
+                width: 300px; height: 300px;
+            }
+            .news {
+                background-color: blue;
+                width: 100%; height: 530px;
+                float: left;
+            }
+            .news div {
+                float: left;
+            }
+            .news_section_left {
+                width: 780px; height: 100%;
+                background-color: red;
+            }
+
+            .news_section_left article {
+                width: 740px; height: 150px;
+                margin: 20px 20px;
+                background-color: bisque;
+            }
+            .news_section_right article {
+                width: 260px; height: 150px;
+                margin: 20px 20px;
+                background-color: bisque;
+            }
+
+            footer {
+                width: 100%; height: 100px;
+                float: left;
+                background-color: rgb(43, 43, 43);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            
+            <header>
+                <h1>All for Pixel Game</h1>
+                <div class="menu">
+                    <div class="logo">
+                        <a href="#"><img height="50" width="50" src="../images/ghost.png" alt="Logo"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Recommendation</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Art Gallery</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                <section class="billboard">
+                    <div class="billboard_left">
+                        <img src="../images/pascal-bernardon-zWHZ_QsU4rc-unsplash.jpg" alt="billboard left img">
+                    </div>
+                    <div class="billboard_right">
+                        <img src="../images/simon-lee-sWI76WS6OMc-unsplash.jpg" alt="billboard right img">
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="news_section_left">
+                        <article>
+                            <p>article1-1</p>
+                        </article>
+                        <article>
+                            <p>article1-2</p>
+                        </article>
+                        <article>
+                            <p>article1-3</p>
+                        </article>
+                    </div>
+                    <div class="news_section_right">
+                        <article>
+                            <p>article2-1</p>
+                        </article>
+                        <article>
+                            <p>article2-2</p>
+                        </article>
+                        <article>
+                            <p>article2-3</p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>footer영역</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
