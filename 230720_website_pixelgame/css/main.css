@@ -1,0 +1,272 @@
+body {
+    background-color: #f5f7f8;;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, textarea, select, button, table {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#wrap {
+    min-width: 1340px;
+    background-color: whitesmoke;
+}
+
+header, main, .footer-wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #cccccc;
+    color: white;
+}
+
+/* ==================== header ==================== */
+h1 {
+    height: 60px;
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.login-signup {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 5px 8px;
+    position: absolute;
+    top: 10px; right: 50px;
+}
+
+.navigation {
+    background-color:white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+
+    border-radius: 30px;
+
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.navigation ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+.navigation li {
+    padding: 18px 40px;
+    background-color: orange;
+}
+
+.navigation li a {
+    background-color: olive;
+    /* display: block;
+    width: 100%; height: 100%; */
+}
+
+/* ==================== main ==================== */
+.billboard {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.billboard div {
+    float: left;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+.billboard-left {
+    background-color:cornflowerblue;
+    width: 840px; height: 100%;
+}
+
+.billboard-right {
+    background-color: bisque;
+    width: 440px; height: 100%;
+}
+
+.billboard img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.contents section {
+    margin-bottom: 70px;  /* 간격 */
+}
+
+.section-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.news-section, .recommend-box, .art-box {
+    background-color: white;
+    box-shadow: 0 0 0 1px #cccccc inset;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 15px;  /* 콘텐츠-버튼 간격 */
+    padding: 20px;
+    overflow: auto;
+}
+
+.plus {
+    background-color:#f5ce00;
+    box-shadow: 0 0 0 1px #cccccc inset;
+    width: 500px; height: 50px;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: center;
+    line-height : 50px;
+}
+
+.plus a {
+    display: block;
+    width: 100%; height: 100%;
+}
+
+/* ==================== main > Pixel Game News ==================== */
+.news-section-left, .news-section-right {
+    float: left;
+}
+
+.news-section-left {
+    width: 50%;
+}
+
+.news-section-right {
+    width: 50%;
+}
+
+.news-section article {
+    padding: 4px;
+}
+
+.news-section article a {
+    display: block;
+    height: 124px;
+}
+
+.news-section article a div {
+    float: left;
+}
+
+.news-img-box {
+    height: 100%; width: 250px;
+    overflow:hidden;
+    margin:0 auto;
+    background-color: yellow;
+}
+
+.news-img-box img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.news-content-box {
+    background-color:bisque;
+    height: 100%; width: 362px;
+    box-sizing: border-box;
+    padding: 4px 10px;
+}
+
+/* ==================== main > Today's Pixel Game Recommendation ==================== */
+.recommend-box article {
+    box-sizing: border-box;
+    width: 200px; height: 400px;
+    background-color: pink;
+    float: left;
+}
+
+.recommend-box article:not(:last-child) {
+    margin-right: 8px;
+}
+
+.recommend-game-img-box {
+    width: 100%; height: 300px;
+    overflow:hidden;
+    margin:0 auto;
+    background-color: yellow;
+}
+.recommend-game-img-box img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.recommend-box article h3, .recommend-box article p {
+    background-color: green;
+    height: 42px;
+    padding: 4px;
+}
+
+.recommend-box article p {
+    background-color: red;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* ==================== main > Pixel Art Gallery ==================== */
+.art-gallery-box {
+    background-color: pink;
+}
+.art-gallery-box-top {
+    background-color: orange;
+}
+
+.art-gallery-box article {
+    width: 304px;
+    height: 304px;
+    float: left;
+    background-color: yellow;
+}
+.art-gallery-box-top article:not(:last-child), .art-gallery-box-bottom article:not(:last-child) {
+    margin-right: 8px;
+}
+.art-gallery-box-top article {
+    margin-bottom: 8px;
+}
+
+.art-gallery-box article a {
+    display: block;
+    height: 100%;
+}
+
+.art-gallery-img-box {
+    width: 100%; height: 100%;
+    overflow:hidden;
+    margin:0 auto
+}
+.art-gallery-img-box img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ==================== footer ==================== */
