@@ -33,33 +33,6 @@
     margin-bottom: 20px;
 }
 
-.news-section, .recommend-box, .art-box {
-    background-color: white;
-    box-shadow: 0 0 0 1px #cccccc inset;
-    box-sizing: border-box;
-    border-radius: 30px;
-    margin-bottom: 15px;  /* 콘텐츠-버튼 간격 */
-    padding: 24px 20px 20px 20px;
-    overflow: auto;
-}
-
-.plus {
-    background-color:#f5ce00;
-    box-shadow: 0 0 0 1px #cccccc inset;
-    width: 500px; height: 50px;
-    margin: 0 auto;
-    border-radius: 15px;
-    text-align: center;
-    line-height : 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.plus a {
-    display: block;
-    width: 100%; height: 100%;
-}
-
 /* ==================== main > Pixel Game News ==================== */
 .news-section-left, .news-section-right {
     float: left;
@@ -88,15 +61,7 @@
 
 .news-img-box {
     height: 100%; width: 250px;
-    overflow:hidden;
-    margin:0 auto;
     border-radius: 10px;
-}
-
-.news-img-box img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
 }
 
 .news-content-box {
@@ -137,6 +102,13 @@
     -webkit-box-orient: vertical;
 }
 
+.news-section-left > article:nth-child(1), .news-section-right > article:nth-child(1) {
+    padding-top: 0;
+}
+.news-section-left > article:nth-child(3), .news-section-right > article:nth-child(3) {
+    padding-bottom: 0;
+}
+
 /* ==================== main > Today's Pixel Game Recommendation ==================== */
 .recommend-box article {
     background-color: whitesmoke;
@@ -151,14 +123,6 @@
 
 .recommend-game-img-box {
     width: 100%; height: 300px;
-    overflow:hidden;
-    margin:0 auto;
-}
-
-.recommend-game-img-box img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
 }
 
 .recommend-box article h3, .recommend-box article p {
@@ -206,11 +170,4 @@
 
 .art-gallery-img-box {
     width: 100%; height: 100%;
-    overflow:hidden;
-    margin:0 auto
-}
-.art-gallery-img-box img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
 }
