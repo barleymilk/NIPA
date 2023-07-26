@@ -51,7 +51,7 @@ article:last-child {
     width: 100%; height: 84px;
     padding: 0 0 4px 0;
     font-size: 1.2rem;
-    color:#7e7e7e;
+    color:#555555;
 
     /* 한 줄 자르기 */
     display: inline-block;
@@ -74,5 +74,5 @@ article:last-child {
     width: 100%; height: 20px;
     line-height: 20px;
     font-size: 1rem;
-    color: #ccc;
+    color: #666666;
 }

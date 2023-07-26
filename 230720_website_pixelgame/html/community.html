@@ -5,6 +5,7 @@
         <title>Pixel Game Web Page</title>
         <link rel="stylesheet" href="../css/basic_form/base.css">
         <link rel="stylesheet" href="../css/basic_form/nav_footer.css">
+        <link rel="stylesheet" href="../css/community.css">
     </head>
 
     <body>
@@ -25,8 +26,8 @@
                     <ul>
                         <li><a href="news.html">News</a></li>
                         <li><a href="recommendation.html">Recommendation</a></li>
-                        <li><a href="#">Review</a></li>
                         <li><a href="art_gallery.html">Art Gallery</a></li>
+                        <li><a href="#">Mini Game</a></li>
                         <li><a href="community.html">Community</a></li>
                     </ul>
                 </nav>
@@ -34,7 +35,51 @@
 
             <main>
                 <div class="contents">
-                    <p>커뮤니티</p>
+                    <div class="search">
+                        <form method="post" action="" id="search-form">
+                            <input type="text" name="search" placeholder="Search">
+                            <input type="image" src="../images/search-icon.png" alt="검색" style="width: 40px; height: 40px; position:relative; top: 10px; left: 10px;">
+                        </form>
+                    </div>
+
+                    <section>
+                        <div class="section-div-box">
+                            <article>
+                                <div>
+                                    <ul>
+                                        <li>말머리</li>
+                                        <li>제목</li>
+                                        <li>작성자</li>
+                                        <li>작성일</li>
+                                        <li>조회수</li>
+                                        <li>좋아요</li>
+                                    </ul>
+                                </div>
+                                <div class="img-box">
+                                    <a href="#"><img src=""></a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="page">
+                    <ul class="pagination">
+                        <li><a class="first" href="#">처음</a></li>
+                        <li><a class="arrow left" href="#"><</a></li>
+                        <li><a class="active num" href="#">1</a></li>
+                        <li><a class="active num" href="#">2</a></li>
+                        <li><a class="active num" href="#">3</a></li>
+                        <li><a class="active num" href="#">4</a></li>
+                        <li><a class="active num" href="#">5</a></li>
+                        <li><a class="active num" href="#">6</a></li>
+                        <li><a class="active num" href="#">7</a></li>
+                        <li><a class="active num" href="#">8</a></li>
+                        <li><a class="active num" href="#">9</a></li>
+                        <li><a class="active num" href="#">10</a></li>
+                        <li><a class="arrow right" href="#">></a></li>
+                        <li><a class="last" href="#">끝</a></li>
+                    </ul>
                 </div>
             </main>
 
