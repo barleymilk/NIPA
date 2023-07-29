@@ -52,6 +52,12 @@
     display: block;
 }
 
+.game-menu li a.selected {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
+
 .game-menu > div:nth-child(3) li {
     width: 210px;
 }
@@ -192,7 +198,6 @@ fieldset label {
     padding: 0 10px;
 }
 .game-content-box h3, .game-content-box p {
-    border-bottom: 1px solid #ccc;
     /* 한 줄 자르기 */
     overflow: hidden;
     text-overflow: ellipsis;
@@ -205,6 +210,7 @@ fieldset label {
     font-size: 1.4rem;
     font-weight: 300;
     background-color: whitesmoke;
+    border-bottom: 1px solid #ccc;
 }
 
 .game-content-box h3:hover {

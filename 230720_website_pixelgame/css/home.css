@@ -2,25 +2,14 @@
 .billboard {
     height: 300px;
     margin-bottom: 30px;
+    background-color: black;
+    width: 100%; height: 300px;
+    border-radius: 20px;
 }
-
-.billboard div {
-    float: left;
-    overflow:hidden;
-    margin:0 auto;
-}
-
-.billboard-left {
-    width: 840px; height: 100%;
-}
-
-.billboard-right {
-    width: 440px; height: 100%;
-}
-
 .billboard img {
     width:100%;
     height:100%;
+    border-radius: 20px;
     object-fit:cover;
 }
 
@@ -31,6 +20,7 @@
 .section-title {
     font-size: 1.6rem;
     margin-bottom: 20px;
+    margin-left: 4px;
 }
 
 /* ==================== main > Pixel Game News ==================== */
@@ -47,7 +37,8 @@
 }
 
 .news-section article {
-    padding: 8px;
+    padding: 16px 0px;
+    border-bottom: 1px solid #ccc;
 }
 
 .news-section article a {
@@ -67,7 +58,7 @@
 .news-content-box {
     height: 100%; width: 354px;
     box-sizing: border-box;
-    padding: 8px 10px;
+    padding: 8px 16px;
 }
 
 .news-section h3 {
@@ -107,12 +98,14 @@
 }
 .news-section-left > article:nth-child(3), .news-section-right > article:nth-child(3) {
     padding-bottom: 0;
+    border-bottom: none;
 }
 
 /* ==================== main > Today's Pixel Game Recommendation ==================== */
 .recommend-box article {
     background-color: whitesmoke;
     box-sizing: border-box;
+    border-radius: 10px;
     width: 200px; height: 400px;
     float: left;
 }
@@ -123,6 +116,7 @@
 
 .recommend-game-img-box {
     width: 100%; height: 300px;
+    border-radius: 10px;
 }
 
 .recommend-box article h3, .recommend-box article p {
@@ -154,6 +148,7 @@
     height: 304px;
     float: left;
     background-color: whitesmoke
+    border-radius: 10px;
 }
 .art-gallery-box-top article:not(:last-child), .art-gallery-box-bottom article:not(:last-child) {
     margin-right: 8px;
@@ -170,4 +165,5 @@
 
 .art-gallery-img-box {
     width: 100%; height: 100%;
+    border-radius: 10px;
 }
