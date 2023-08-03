@@ -48,7 +48,7 @@
                             <h2 class="section-title">픽셀 게임 뉴스</h2>
                             <div class="news-section-left">
                                 <article>
-                                    <a href="#">
+                                    <a href="./news_detail.html">
                                         <div class="img-box news-img-box"><img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/03/stardew-valley-every-golden-walnut-location.jpg?q=50&fit=contain&w=1140&h=570&dpr=1.5" alt="news1"></div>
                                         <div class="news-content-box">
                                             <h3>스타듀 밸리: 모든 황금 호두 위치와 그것들을 얻는 방법</h3>
@@ -305,26 +305,27 @@
         </div>
     </body>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        window.onload = function(){
             const images = [
-                "https://www.gameinformer.com/sites/default/files/styles/full/public/2023/05/03/10475b59/double_dragon_gaiden_2.jpg",
                 "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/10/Potion-Permit_Potion-House.jpg?q=50&fit=crop&w=1500&dpr=1.5",
                 "https://cdn.akamai.steamstatic.com/steam/apps/1621690/ss_8fdb403db359d63c818708b001b39780721d53b2.600x338.jpg?t=1687352119",
-                "https://cdn.akamai.steamstatic.com/steam/apps/1868140/ss_783e1f6c2d4c358fb494d055c47c0e888922abd5.600x338.jpg?t=1690431681"
-                // 이곳에 추가 이미지 URL을 넣으세요
+                "https://cdn.akamai.steamstatic.com/steam/apps/1868140/ss_783e1f6c2d4c358fb494d055c47c0e888922abd5.600x338.jpg?t=1690431681",
+                "https://www.gameinformer.com/sites/default/files/styles/full/public/2023/05/03/10475b59/double_dragon_gaiden_2.jpg"
             ];
 
             let currentImageIndex = 0;
             const imgElement = document.getElementById("slider-img");
-            const prevBtn = document.querySelector(".prev-btn");
-            const nextBtn = document.querySelector(".next-btn");
+            const prevBtn = document.getElementById("prev-btn");
+            const nextBtn = document.getElementById("next-btn");
 
             function showNextImage() {
+                console.log("clicked next button")
                 currentImageIndex = (currentImageIndex + 1) % images.length;
                 imgElement.src = images[currentImageIndex];
             }
 
             function showPreviousImage() {
+                console.log("clicked prev button")
                 currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
                 imgElement.src = images[currentImageIndex];
             }
@@ -339,6 +340,6 @@
             // 버튼 클릭 이벤트 처리
             prevBtn.addEventListener("click", showPreviousImage);
             nextBtn.addEventListener("click", showNextImage);
-        })
+        }
     </script>
 </html>
